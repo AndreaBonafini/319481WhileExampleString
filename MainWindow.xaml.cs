@@ -23,6 +23,15 @@ namespace _319481WhileExamplesString
         public MainWindow()
         {
             InitializeComponent();
+            string myWord = "Hello";
+            string output = "";
+            while(myWord.Length >0)
+            {
+                output += myWord.Substring(0, 1)
+                    + Environment.NewLine;
+                myWord = myWord.Substring(1);
+            }
+            lblOutput.Content = output
         }
     }
 }
